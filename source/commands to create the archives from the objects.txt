@@ -1,0 +1,2 @@
+bin\arm-eabi-ar -rc lib\libxm79.a build\libxm79.o
+bin\arm-eabi-ar -rc lib\libxm77.a build\libxm77.o
