@@ -866,6 +866,9 @@ void XM7_UnloadXM (XM7_ModuleManager_Type* Module)
   // instruments, from last to first
   for (i=(Module->NumberofInstruments-1);i>=0;i--) {
     CurrentInstrumentPtr = Module->Instrument[i];
+
+    if (CurrentInstrumentPtr == NULL)
+      continue;
 	
 	// samples, from last to first
     for (j=(CurrentInstrumentPtr->NumberofSamples-1);j>=0;j--) {
